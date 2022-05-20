@@ -7,7 +7,7 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 from PIL import Image
 
-from model import resnet34
+from .model import resnet34
 
 
 def predict(img):
@@ -33,6 +33,7 @@ def predict(img):
 
     # read class_indict
     json_path = './class_indices.json'
+    print(json_path)
     assert os.path.exists(json_path), "file: '{}' dose not exist.".format(json_path)
 
     with open(json_path, "r") as f:

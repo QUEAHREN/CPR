@@ -6,7 +6,7 @@ from torchvision import transforms
 import numpy as np
 from PIL import Image
 
-from src import UNet
+from .src import UNet
 
 
 def time_synchronized():
