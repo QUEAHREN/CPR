@@ -33,7 +33,6 @@ def predict(img):
 
     # read class_indict
     json_path = './class_indices.json'
-    print(json_path)
     assert os.path.exists(json_path), "file: '{}' dose not exist.".format(json_path)
 
     with open(json_path, "r") as f:

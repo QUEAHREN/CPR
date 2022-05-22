@@ -178,7 +178,7 @@ def createYpixel(data_path):
             f.write(content + '\n')
         f.close()
 
-    image_path = data_path + '/result/'
+    image_path = data_path + '/mergeResult/'
     save_txt = data_path + '/point_pixel_txt/'
     save_image = data_path + "/check_test/"
     y_data_path = data_path + "/Y_Data/"
